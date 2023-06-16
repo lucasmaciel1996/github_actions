@@ -2,7 +2,7 @@ name: learn-github-actions
 run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
 jobs:
-  jobs-1:
+  job-run-01:
     runs-on: ubuntu:latest
     steps:
        - uses: actions/checkout@v3
@@ -11,12 +11,4 @@ jobs:
             node-version: '18'
        - run: npm ci
        - run: node  build && test && deploy     
-  jobs-2:
-    runs-on: ubuntu:latest
-    steps:
-       - uses: actions/checkout@v3
-       - uses: actions/setup-node@v3
-          with:
-            node-version: '19'
-       - run: npm ci
-       - run: node  deploy      
+      
