@@ -1,0 +1,13 @@
+{
+  "name": "github_pages",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:lucasmaciel1996/github_actions.git",
+  "author": "Lucas Maciel <lucas333maciel@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build":"echo build...",
+    "test":"echo test...",
+    "deploy":"echo deploy..."
+  }
+}
