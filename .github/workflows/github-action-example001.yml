@@ -8,3 +8,17 @@ jobs:
       - run: echo test
       - run: echo build
       - run: echo test
+      - run: echo event ${{ github.event_name }}
+      - run: echo os ${{ runner.os }}
+      - run: echo REF ${{ github.repository }} ${{ github.ref }}
+  jobs-002:
+    runs-on: ubuntu-latest
+    steps:
+      - run: send email   
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: List files
+        run: |
+           echo start.. \
+           ls -a ${{ github.workspace }}
+      - run: echo this job status is ${{ job.status }}     
