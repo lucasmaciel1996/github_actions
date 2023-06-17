@@ -14,7 +14,7 @@ jobs:
   jobs-002:
     runs-on: ubuntu-latest
     steps:
-      - run: send email   
+      - run: echo sendEmail   
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: List files
