@@ -6,8 +6,13 @@
   "author": "Lucas Maciel <lucas333maciel@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build":"echo build...",
-    "test":"echo test...",
-    "deploy":"echo deploy..."
+    "build": "tsup src",
+    "test": "vitest",
+    "deploy": "echo deploy...",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "tsup": "^7.0.0",
+    "vitest": "^0.32.2"
   }
 }
