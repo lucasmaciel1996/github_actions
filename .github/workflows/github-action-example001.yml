@@ -1,0 +1,10 @@
+name: GithubActions Example 001
+run-name: ${{ github.actor }} is running GitHubActions
+on: [push]
+jobs:
+  jobs-001:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo test
+      - run: echo build
+      - run: echo test
